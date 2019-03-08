@@ -7,39 +7,40 @@
     android:orientation="vertical">
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/viewpager_main"
+        android:id="@+id/viewpager_wardrobe"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         />
-
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_alignParentBottom="true"
-        android:background="@android:color/background_light"
-        app:labelVisibilityMode="labeled"
-        app:itemIconTint="@drawable/selector_bottom_navigation"
-        app:itemTextColor="@drawable/selector_bottom_navigation"
-        app:menu="@menu/menu_bottom_navigation" />
 
     <android.support.v7.widget.Toolbar
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_height="56dp"
         android:layout_width="match_parent"
-        android:id="@+id/toolbar"
+        android:id="@+id/toolbar_wardrobe"
         android:gravity="center"
         android:background="@android:color/background_light"
         android:minHeight="?attr/actionBarSize">
 
         <TextView
-            android:id="@+id/app_title"
+            android:id="@+id/tv_wardrobe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColor="@android:color/black"
-            android:textSize="22sp"
-            android:text="Delicates" />
+            android:background="?viewItemForegroundBorderless"
+            android:textColor="@drawable/text_color_selector_menu"
+            android:textSize="20sp"
+            android:text="衣柜" />
+
+        <TextView
+            android:id="@+id/tv_using"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?viewItemForegroundBorderless"
+            android:textColor="@drawable/text_color_selector_menu"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:text="使用中" />
 
     </android.support.v7.widget.Toolbar>
 
