@@ -6,11 +6,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <android.support.v4.view.ViewPager
+    <com.htc.delicates.Util.CustomViewPager
         android:id="@+id/viewpager_main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+        android:layout_height="match_parent" />
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/bottomNavigationView"
@@ -23,24 +22,6 @@
         app:itemTextColor="@drawable/selector_bottom_navigation"
         app:menu="@menu/menu_bottom_navigation" />
 
-    <android.support.v7.widget.Toolbar
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_height="56dp"
-        android:layout_width="match_parent"
-        android:id="@+id/toolbar"
-        android:gravity="center"
-        android:background="@android:color/background_light"
-        android:minHeight="?attr/actionBarSize">
 
-        <TextView
-            android:id="@+id/app_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:textColor="@android:color/black"
-            android:textSize="22sp"
-            android:text="Delicates" />
-
-    </android.support.v7.widget.Toolbar>
 
 </RelativeLayout>

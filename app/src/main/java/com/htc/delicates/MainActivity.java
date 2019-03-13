@@ -1,25 +1,26 @@
 package com.htc.delicates;
 
-import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Toast;
+
+import com.htc.delicates.Util.CustomViewPager;
 
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener,
         ViewPager.OnPageChangeListener, ViewPager.OnTouchListener {
 
+    private static final String TAG = "MainActivity";
+
     BottomNavigationView bottomNavigationView;
 
-    ViewPager viewPager;
+    CustomViewPager viewPager;
 
     MenuItem menuItem;
 
@@ -28,22 +29,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigationView);
-        viewPager = (ViewPager) findViewById(R.id.viewpager_main);
-        Toolbar mToolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(mToolbar);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
-        mToolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem menuItem) {
-                switch (menuItem.getItemId()){
-                    case R.id.item_wardrobe:
-                        Intent intent = new Intent(MainActivity.this, WardrobeActivity.class);
-                        startActivity(intent);
-                        break;
-                }
-                return true;
-            }
-        });
+        viewPager = (CustomViewPager) findViewById(R.id.viewpager_main);
+        viewPager.setScanScroll(false);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
         viewPager.addOnPageChangeListener(this);
 
@@ -57,9 +44,9 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         adapter.addFragment(BaseFragment.newInstance("新闻"));
         adapter.addFragment(BaseFragment.newInstance("图书"));
-        adapter.addFragment(BaseFragment.newInstance("发现"));
-        adapter.addFragment(BaseFragment.newInstance("更多"));
-        adapter.addFragment(BaseFragment.newInstance("个人中心"));
+        adapter.addFragment(new WishFragment());
+        adapter.addFragment(new OrderFragment());
+        adapter.addFragment(new UserFragment());
         viewPager.setAdapter(adapter);
     }
 
@@ -87,7 +74,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     @Override
     public void onPageScrolled(int i, float v, int i1) {
-
     }
 
     @Override
@@ -110,9 +96,4 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         return false;
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_firstpage_wardrobe, menu);
-        return true;
-    }
 }

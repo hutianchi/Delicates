@@ -2,17 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:id="@+id/tv_wardrobe"
-
-        android:title="衣柜"
+    <item
+        android:id="@+id/item_wardrobe"
+        android:title="wardrobe"
+        android:icon="@drawable/wardrobe"
         android:visible="true"
         app:showAsAction="always" />
-
-    <item android:id="@+id/tv_using"
-        android:textSize="22sp"
-        android:title="使用中"
-        android:visible="true"
-        app:showAsAction="always" />
-
 
 </menu>

@@ -1,7 +1,6 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -9,11 +8,9 @@
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager_wardrobe"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+        android:layout_height="match_parent" />
 
     <android.support.v7.widget.Toolbar
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_height="56dp"
         android:layout_width="match_parent"
         android:id="@+id/toolbar_wardrobe"
@@ -28,7 +25,7 @@
             android:layout_gravity="center"
             android:background="?viewItemForegroundBorderless"
             android:textColor="@drawable/text_color_selector_menu"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:text="衣柜" />
 
         <TextView
@@ -39,7 +36,7 @@
             android:background="?viewItemForegroundBorderless"
             android:textColor="@drawable/text_color_selector_menu"
             android:layout_marginLeft="30dp"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:text="使用中" />
 
     </android.support.v7.widget.Toolbar>
