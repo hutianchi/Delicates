@@ -5,7 +5,6 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
@@ -42,8 +41,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     private void init(ViewPager viewPager){
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
 
-        adapter.addFragment(BaseFragment.newInstance("新闻"));
-        adapter.addFragment(BaseFragment.newInstance("图书"));
+        adapter.addFragment(new RecommendFragment());
+        adapter.addFragment(new SelectFragment());
         adapter.addFragment(new WishFragment());
         adapter.addFragment(new OrderFragment());
         adapter.addFragment(new UserFragment());

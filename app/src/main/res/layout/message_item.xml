@@ -12,15 +12,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingLeft="10dp"
-        android:background="@drawable/message_list_style">
+        android:padding="10dp"
+        android:background="@drawable/blue_list_style">
 
         <TextView
             android:id="@+id/message_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="14sp"
-            android:textColor="#7B7B7B"
+            android:textColor="#ffffff"
             android:text="message time"/>
 
         <TextView
@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:textColor="#7B7B7B"
+            android:textColor="#ffffff"
             android:text="message"/>
 
     </LinearLayout>

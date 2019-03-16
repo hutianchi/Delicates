@@ -61,8 +61,8 @@ public class WishFragment extends Fragment implements ViewPager.OnPageChangeList
     private void init(ViewPager viewPager){
         ViewPagerAdapter adapter = new ViewPagerAdapter(getActivity().getSupportFragmentManager());
 
-        adapter.addFragment(BaseFragment.newInstance("新闻"));
-        adapter.addFragment(BaseFragment.newInstance("图书"));
+        adapter.addFragment(BaseFragment.newInstance("心愿单品"));
+        adapter.addFragment(BaseFragment.newInstance("心愿品牌"));
         viewPager.setAdapter(adapter);
     }
 
@@ -73,7 +73,16 @@ public class WishFragment extends Fragment implements ViewPager.OnPageChangeList
 
     @Override
     public void onPageSelected(int i) {
-
+        switch (i){
+            case 0:
+                tv_wish_clothes.setEnabled(false);
+                tv_wish_brand.setEnabled(true);
+                break;
+            case 1:
+                tv_wish_clothes.setEnabled(true);
+                tv_wish_brand.setEnabled(false);
+                break;
+        }
     }
 
     @Override

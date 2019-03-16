@@ -1,15 +1,12 @@
 package com.htc.delicates.Util;
 
 import android.content.Context;
-import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
-import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.htc.delicates.Model.Order;
 import com.htc.delicates.R;
@@ -53,13 +50,6 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.MyViewHolder
                     }
                 });
             }
-//            myViewHolder.item_click_area.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    int pos = myViewHolder.getLayoutPosition();
-//                    mListener.onItemClick(OrderAdapter.this,myViewHolder.item_click_area, pos);
-//                }
-//            });
             Order order = orderList.get(i);
             myViewHolder.im_order.setImageResource(order.imageId);
             myViewHolder.tv_order.setText(order.orderName);
@@ -82,14 +72,12 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.MyViewHolder
         ImageView im_order;
         TextView tv_order;
         TextView tv_delete;
-        LinearLayout item_click_area;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             im_order = (ImageView) itemView.findViewById(R.id.order_image);
             tv_order = (TextView) itemView.findViewById(R.id.order_text);
             tv_delete = (TextView) itemView.findViewById(R.id.tv_delete);
-            item_click_area = (LinearLayout) itemView.findViewById(R.id.item_click_area);
         }
 
     }

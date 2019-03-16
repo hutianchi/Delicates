@@ -50,8 +50,8 @@ public class WardrobeActivity extends AppCompatActivity implements ViewPager.OnP
     private void init(ViewPager viewPager){
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
 
-        adapter.addFragment(BaseFragment.newInstance("新闻"));
-        adapter.addFragment(BaseFragment.newInstance("图书"));
+        adapter.addFragment(BaseFragment.newInstance("衣柜"));
+        adapter.addFragment(BaseFragment.newInstance("使用中"));
         viewPager.setAdapter(adapter);
     }
 

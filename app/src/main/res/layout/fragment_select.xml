@@ -5,9 +5,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <android.support.v4.view.ViewPager
+    <com.htc.delicates.Util.CustomViewPager
         android:id="@+id/viewpager_select"
         android:layout_marginBottom="70dp"
+        android:layout_marginTop="56dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/toolbar_order" />
@@ -30,7 +31,8 @@
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
             android:textSize="16sp"
-            android:text="心愿单品" />
+            android:textStyle="bold"
+            android:text="随心穿搭" />
 
         <TextView
             android:id="@+id/select_dress"
@@ -42,7 +44,8 @@
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
             android:textSize="16sp"
-            android:text="心愿品牌" />
+            android:textStyle="bold"
+            android:text="礼服短租" />
 
     </android.support.v7.widget.Toolbar>
 
