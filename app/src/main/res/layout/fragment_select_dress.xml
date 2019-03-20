@@ -1,0 +1,116 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/background_light">
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollViewDress1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/horizontalScrollViewDressItem1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" />
+
+                </HorizontalScrollView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/my_divider"/>
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollViewDress2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/horizontalScrollViewDressItem2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" />
+
+                </HorizontalScrollView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/my_divider"/>
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollViewDress3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/horizontalScrollViewDressItem3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" />
+
+                </HorizontalScrollView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/my_divider"/>
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollViewDress4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/horizontalScrollViewDressItem4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" />
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/dress_recycler"
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F9F9F9" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

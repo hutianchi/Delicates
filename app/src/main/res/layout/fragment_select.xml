@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.htc.delicates.Util.CustomViewPager
+    <com.htc.delicates.MyView.MyViewPager
         android:id="@+id/viewpager_select"
         android:layout_marginBottom="70dp"
         android:layout_marginTop="56dp"

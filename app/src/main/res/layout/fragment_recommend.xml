@@ -69,11 +69,11 @@
                 android:textSize="20sp"
                 android:textStyle="bold"/>
 
-            <com.htc.delicates.Util.RecyclerCoverFlow
+            <com.htc.delicates.MyView.RecyclerCoverFlow
                 android:id="@+id/recommend_update"
                 android:layout_width="match_parent"
                 android:layout_height="270dp">
-            </com.htc.delicates.Util.RecyclerCoverFlow>
+            </com.htc.delicates.MyView.RecyclerCoverFlow>
 
             <TextView
                 android:layout_width="match_parent"

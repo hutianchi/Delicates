@@ -13,16 +13,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.DecelerateInterpolator;
 
+import com.htc.delicates.MyView.RecyclerCoverFlow;
+
 /**
  * Cover Flow布局类
  * <p>通过重写LayoutManger布局方法{@link #onLayoutChildren(RecyclerView.Recycler, RecyclerView.State)}
  * 对Item进行布局，并对超出屏幕的Item进行回收
  * <p>通过重写LayoutManger中的{@link #scrollHorizontallyBy(int, RecyclerView.Recycler, RecyclerView.State)}
  * 进行水平滚动处理
- *
- * @author Chen Xiaoping (562818444@qq.com)
- * @version V1.0
- * @Datetime 2017-04-18
  */
 
 public class CoverFlowLayoutManger extends RecyclerView.LayoutManager {

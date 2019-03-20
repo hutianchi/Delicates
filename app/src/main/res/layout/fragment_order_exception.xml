@@ -1,0 +1,52 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F9F9F9">
+
+        <TextView
+            android:id="@+id/compensate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="待赔付"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <com.htc.delicates.MyView.SlideRecyclerView
+            android:layout_below="@id/compensate"
+            android:id="@+id/recyclerView_compensate"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/compensated"
+            android:layout_below="@id/recyclerView_compensate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="已赔付"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <com.htc.delicates.MyView.SlideRecyclerView
+            android:id="@+id/recyclerView_compensated"
+            android:layout_below="@id/compensated"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
