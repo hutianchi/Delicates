@@ -1,5 +1,6 @@
 package com.htc.delicates.Activity;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.view.ViewPager;
@@ -17,6 +18,7 @@ import com.htc.delicates.Fragment.UserFragment;
 import com.htc.delicates.MyView.MyViewPager;
 import com.htc.delicates.Adapter.ViewPagerAdapter;
 import com.htc.delicates.Fragment.WishFragment;
+import com.htc.delicates.Service.NotificationService;
 
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener,
@@ -39,8 +41,9 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         viewPager.setScanScroll(false);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
         viewPager.addOnPageChangeListener(this);
-
         init(viewPager);
+        Intent intent = new Intent(this, NotificationService.class);
+        startService(intent);
         //StatusBarUtil.transparencyBar(this); //设置状态栏全透明
         //StatusBarUtil.StatusBarLightMode(this); //设置白底黑字
     }

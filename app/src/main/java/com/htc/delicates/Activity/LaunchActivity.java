@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.htc.delicates.R;
+import com.mob.MobSDK;
 
 public class LaunchActivity extends AppCompatActivity {
 
@@ -13,7 +14,7 @@ public class LaunchActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launch);
-
+        MobSDK.init(this);
 //        new Thread(new Runnable() {
 //            @Override
 //            public void run() {

@@ -1,0 +1,141 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_height="56dp"
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar_edit_address"
+        android:gravity="center"
+        android:background="@android:color/background_light"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="编辑地址" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="收货人"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:drawableRight="@drawable/right"/>
+
+        <EditText
+            android:id="@+id/address_name"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:padding="10dp"
+            android:maxLength="10"
+            android:gravity="end|center_vertical"
+            android:maxLines="1"
+            android:minLines="1"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/my_divider"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="手机号码"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:drawableRight="@drawable/right"/>
+
+        <EditText
+            android:id="@+id/address_phone"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:padding="10dp"
+            android:maxLength="11"
+            android:digits="1234567890"
+            android:gravity="end|center_vertical"
+            android:maxLines="1"
+            android:minLines="1"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/my_divider"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="详细地址"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:paddingTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:drawableRight="@drawable/right"/>
+
+        <EditText
+            android:id="@+id/address_more"
+            android:layout_width="260dp"
+            android:layout_height="100dp"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:padding="10dp"
+            android:maxLength="32"
+            android:maxLines="3"
+            android:minLines="1"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/my_divider"/>
+
+</LinearLayout>

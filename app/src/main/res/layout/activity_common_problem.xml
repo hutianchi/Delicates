@@ -1,0 +1,470 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#ffffff">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_height="56dp"
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar_problem"
+        android:gravity="center"
+        android:background="@android:color/background_light"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?viewItemForegroundBorderless"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="常见问题" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_problem">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:text="租衣问题"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/rent1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableRight="@drawable/right"
+                android:text="1.感受租衣带来的美好体验需要几个步骤？"/>
+
+            <TextView
+                android:id="@+id/rent1_more"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:text="1）打开Delicates APP完成注册，付费成为会员。
+                \n2）付费成功后，挑选自己喜爱的美衣，并加入衣柜。
+                \n3）加满衣箱后，确认下单（将这个衣箱寄给我）。
+                \n4）填写详细正确的配送时间及收货信息（姓名、电话、签收地址）。
+                \n5）等待衣箱送达，检查美衣并签收衣箱，如有问题请在签收后24小时内联系客服。
+                \n6）体验结束，开启新衣箱，同时「预约归还」旧衣箱，等待快递上门取件将旧衣箱寄回。"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/my_divider"/>
+
+            <TextView
+                android:id="@+id/rent2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableRight="@drawable/right"
+                android:text="2.我下单后什么时间发货，我多久可以收到衣服？"/>
+
+            <TextView
+                android:id="@+id/rent2_more"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:text="  如果在17点前下单会在当天发货，17点以后下单则会在次日发货。"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/my_divider"/>
+
+            <TextView
+                android:id="@+id/rent3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableRight="@drawable/right"
+                android:text="3.下单后我如何修改订单信息？例如更改地址更换服饰或尺码？"/>
+
+            <TextView
+                android:id="@+id/rent3_more"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:text="  下单后订单中的所有信息不支持更改，请在下单前仔细核对。"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/my_divider"/>
+
+            <TextView
+                android:id="@+id/rent4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableRight="@drawable/right"
+                android:text="4.衣柜里有几件单品？能否增加衣柜的容量？"/>
+
+            <TextView
+                android:id="@+id/rent4_more"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:text="衣柜内衣位数与会员等级有关
+                \n  V1、V2等级会员：3个衣位／衣柜
+                \n  V3、V4等级会员：4个衣位／衣柜
+                \n  V5等级会员：5个衣位／衣柜
+                \n  特别提示：如果服饰标有占用2个衣位、3个衣位	，则表示此服饰价值较高，需要占用更多的衣位。"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/my_divider"/>
+
+            <TextView
+                android:id="@+id/rent5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableRight="@drawable/right"
+                android:text="5.我喜欢的衣服，能单独留下续租？衣箱最长能保留多久？"/>
+
+            <TextView
+                android:id="@+id/rent5_more"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:text="  目前暂不支持单件续租功能，请整箱服饰一起归还后再次租用喜欢的服饰。"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/my_divider"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:layout_marginTop="40dp"
+                android:text="还衣问题"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/return1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableRight="@drawable/right"
+                android:text="1.衣箱要如何归还？"/>
+
+            <TextView
+                android:id="@+id/return1_more"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:text="  进入Delicates APP 我的衣柜页－点击「预约归还」，并选择取件方式、时间及取件地址后提交。衣箱寄出后请妥善保管物流凭证（运单及短信 ），以防物流原因导致衣箱遗失。"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/my_divider"/>
+
+            <TextView
+                android:id="@+id/return2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableRight="@drawable/right"
+                android:text="2.还衣时需要整个衣箱一起归还吗？"/>
+
+            <TextView
+                android:id="@+id/return2_more"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:text="  是的。请在归还衣箱时检查确认，将衣箱中包含的所有服饰一同寄回。"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/my_divider"/>
+
+            <TextView
+                android:id="@+id/return3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableRight="@drawable/right"
+                android:text="3.在归还衣物时将自己的私人物品一同寄出了怎么办？"/>
+
+            <TextView
+                android:id="@+id/return3_more"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:text="  请在第一时间联系客服，如仓库收到包裹后含有你的私人物品，我们将联系你协商归还方式。
+                \n  特别提示：如物品在物流过程中有损坏或遗失，我们将不承担任何责任。"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/my_divider"/>
+
+            <TextView
+                android:id="@+id/return4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableRight="@drawable/right"
+                android:text="4.会员到期后，何时归还衣箱？"/>
+
+            <TextView
+                android:id="@+id/return4_more"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:text="  请确保在会员期结束后3天内将手中衣箱完整寄回。 特别提示：如果超出3天衣箱仍未寄回，则需按日缴纳相应滞纳金（以该服装零售原价为上限）。连续包月用户如在有效期结束前3天提交连续包月取消申请，请在会员期结束后3天内将衣箱完整寄回，我们将在会员期结束后7天内完成质检，如衣箱无异常将为您解除连续包月服务；如衣箱未按时归还或存在异常则视为解除无效，我们将为您续订连续包月服务。"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/my_divider"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:layout_marginTop="40dp"
+                android:text="其他问题"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/other1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableRight="@drawable/right"
+                android:text="1.Delicates的服饰是正品吗？是干净的吗？"/>
+
+            <TextView
+                android:id="@+id/other1_more"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:text="  请放心，Delicates所有服饰均为正品。我们会不定期上架新品，且与全国知名的洗衣机构进行深度合作，每个衣箱归还后都会进行专业且严格的清洗和消毒。保证送到你手上的服饰干净整洁，请放心穿戴。"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/my_divider"/>
+
+            <TextView
+                android:id="@+id/other2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableRight="@drawable/right"
+                android:text="2.如何查看会员状态及有效期？"/>
+
+            <TextView
+                android:id="@+id/other2_more"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:text="进入Delicates APP进入我的页面即可查看会员状态及有效期。"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/my_divider"/>
+
+            <TextView
+                android:id="@+id/other3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableRight="@drawable/right"
+                android:text="3.会员有效期如何计算？"/>
+
+            <TextView
+                android:id="@+id/other3_more"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:text="  月卡／连续包月：30天；
+                \n  季卡：90天；
+                \n  年卡：365天。"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/my_divider"/>
+
+            <TextView
+                android:id="@+id/other4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableRight="@drawable/right"
+                android:text="4.我不小心把衣服损坏或者丢失了，怎么处理？"/>
+
+            <TextView
+                android:id="@+id/other4_more"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:text="  如果衣服严重损坏或丢失等情况导致不能再次租赁的，需要根据衣服的市场价值及损坏程度进行赔偿，请在异常订单里查找并进行赔付。"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/my_divider"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

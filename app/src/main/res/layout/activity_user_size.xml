@@ -1,0 +1,267 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_height="56dp"
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar_user_size"
+        android:gravity="center"
+        android:background="@android:color/background_light"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="尺码信息" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="3dp"
+        android:background="@android:color/background_light">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="身高"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp" />
+
+        <EditText
+            android:id="@+id/user_height"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:layout_toLeftOf="@id/cm"
+            android:padding="10dp"
+            android:maxLength="3"
+            android:hint="eg:166"
+            android:digits="1234567890"
+            android:gravity="end|center_vertical"
+            android:maxLines="1"
+            android:minLines="1"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/cm"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="CM"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/my_divider"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/background_light">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="体重"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp" />
+
+        <EditText
+            android:id="@+id/user_wight"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:layout_toLeftOf="@id/kg"
+            android:padding="10dp"
+            android:maxLength="3"
+            android:hint="eg:53"
+            android:digits="1234567890"
+            android:gravity="end|center_vertical"
+            android:maxLines="1"
+            android:minLines="1"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/kg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="KG"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/my_divider"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/background_light">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="胸围"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp" />
+
+        <EditText
+            android:id="@+id/user_xiongwei"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:layout_toLeftOf="@id/xiongwei"
+            android:padding="10dp"
+            android:maxLength="3"
+            android:hint="eg:90"
+            android:digits="1234567890"
+            android:gravity="end|center_vertical"
+            android:maxLines="1"
+            android:minLines="1"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/xiongwei"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="CM"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/my_divider"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/background_light">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="腰围"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp" />
+
+        <EditText
+            android:id="@+id/user_yaowei"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:layout_toLeftOf="@id/yaowei"
+            android:padding="10dp"
+            android:maxLength="3"
+            android:hint="eg:64"
+            android:digits="1234567890"
+            android:gravity="end|center_vertical"
+            android:maxLines="1"
+            android:minLines="1"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/yaowei"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="CM"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/my_divider"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/background_light">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="臀围"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp" />
+
+        <EditText
+            android:id="@+id/user_tunwei"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:layout_toLeftOf="@id/tunwei"
+            android:padding="10dp"
+            android:maxLength="3"
+            android:hint="eg:92"
+            android:digits="1234567890"
+            android:gravity="end|center_vertical"
+            android:maxLines="1"
+            android:minLines="1"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tunwei"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="CM"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/my_divider"/>
+
+</LinearLayout>

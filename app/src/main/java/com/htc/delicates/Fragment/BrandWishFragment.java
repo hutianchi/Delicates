@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.htc.delicates.Activity.AddBrandActivity;
+import com.htc.delicates.Activity.BrandDetailActivity;
 import com.htc.delicates.Adapter.BrandAdapter;
 import com.htc.delicates.Model.Brand;
 import com.htc.delicates.R;
@@ -46,6 +47,8 @@ public class BrandWishFragment extends Fragment {
                 startActivity(intent);
             }else {
                 Toast.makeText(getActivity(), brandList.get(position).brandName, Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(), BrandDetailActivity.class);
+                startActivity(intent);
             }
         });
 

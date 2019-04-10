@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
     android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
@@ -26,9 +27,17 @@
 
     </android.support.v7.widget.Toolbar>
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/wardrobe_recycler"
+    <View
+        android:id="@+id/split"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
         android:layout_below="@id/toolbar_wardrobe"
+        android:background="@drawable/my_divider"/>
+
+
+    <com.htc.delicates.MyView.SlideRecyclerView
+        android:id="@+id/wardrobe_recycler"
+        android:layout_below="@id/split"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

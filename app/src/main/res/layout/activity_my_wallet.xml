@@ -1,0 +1,26 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_height="56dp"
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar_wallet"
+        android:gravity="center"
+        android:background="@android:color/background_light"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="我的钱包" />
+
+    </android.support.v7.widget.Toolbar>
+
+</LinearLayout>

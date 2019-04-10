@@ -1,0 +1,82 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/white_textview_backgrand">
+
+        <TextView
+            android:id="@+id/coupon_count"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:padding="20dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@id/coupon_count"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/my_divider"/>
+
+        <TextView
+            android:id="@+id/coupon_details"
+            android:layout_toRightOf="@id/coupon_count"
+            android:layout_toLeftOf="@id/coupon_use"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:textColor="#000000"
+            android:gravity="start"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/coupon_date"
+            android:layout_toRightOf="@id/coupon_count"
+            android:layout_toLeftOf="@id/split_use"
+            android:layout_below="@id/coupon_details"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="5dp"
+            android:gravity="start"
+            android:textSize="20sp"/>
+
+        <View
+            android:id="@+id/split_use"
+            android:layout_toLeftOf="@id/coupon_use"
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/my_divider"/>
+
+        <TextView
+            android:id="@+id/coupon_use"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="end"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:background="#80F31E1E"
+            android:text="立即使用"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+

@@ -1,5 +1,6 @@
 package com.htc.delicates.Fragment;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -21,6 +22,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.htc.delicates.Activity.ClothesDetailActivity;
 import com.htc.delicates.Model.Clothes;
 import com.htc.delicates.R;
 import com.htc.delicates.Adapter.ClothesAdapter;
@@ -155,6 +157,8 @@ public class ClothesSelectFragment extends Fragment implements View.OnClickListe
             //
             //  订单详情页跳转
             //
+            Intent intent = new Intent(getActivity(), ClothesDetailActivity.class);
+            startActivity(intent);
 
             Toast.makeText(getActivity(),"this is clothes detail!!!     "+ clothesList.get(position).clothesName, Toast.LENGTH_SHORT).show();
         });

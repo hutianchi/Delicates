@@ -1,5 +1,6 @@
 package com.htc.delicates.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -13,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.htc.delicates.Activity.OrderDetailActivity;
 import com.htc.delicates.Model.Order;
 import com.htc.delicates.R;
 import com.htc.delicates.Adapter.OrderAdapter;
@@ -45,10 +47,8 @@ public class ClothesOrderFragment extends Fragment {
         mRecyclerView.setAdapter(orderAdapter);
         orderAdapter.setOnItemClickListener((adapter, v, position) ->{
 
-            //
-            //  订单详情页跳转
-            //
-
+            Intent intent = new Intent(getActivity(), OrderDetailActivity.class);
+            startActivity(intent);
             Toast.makeText(getActivity(),"this is order detail!!!     "+ mList.get(position).orderName, Toast.LENGTH_SHORT).show();
         });
         orderAdapter.setOnDeleteClickListener((view1, position) -> {

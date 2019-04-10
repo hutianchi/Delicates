@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_height="56dp"
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar_order_detail"
+        android:gravity="center"
+        android:background="@android:color/background_light"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="订单详情" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="收货地址"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical"
+                        android:background="@android:color/background_light"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingBottom="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="@drawable/white_textview_backgrand"
+                        android:paddingTop="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/order_address_name"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:textSize="18sp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:gravity="center_vertical"/>
+
+                        <TextView
+                            android:id="@+id/order_address_phone"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:textSize="18sp"
+                            android:textColor="#000000"
+                            android:gravity="center_vertical"/>
+
+                        <TextView
+                            android:id="@+id/order_address_details"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:textSize="18sp"
+                            android:textColor="#000000"
+                            android:gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="订单内容"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical"
+                        android:background="@android:color/background_light"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingBottom="5dp"/>
+
+                    <View
+                        android:id="@+id/order_split1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/my_divider"/>
+
+                    <LinearLayout
+                        android:id="@+id/order1"
+                        android:orientation="horizontal"
+                        android:background="@android:color/background_light"
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:id="@+id/order1_image"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp" />
+
+                        <TextView
+                            android:id="@+id/order1_text"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:textSize="18sp"
+                            android:gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/order_split2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/my_divider"/>
+
+                    <LinearLayout
+                        android:id="@+id/order2"
+                        android:orientation="horizontal"
+                        android:background="@android:color/background_light"
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:id="@+id/order2_image"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp" />
+
+                        <TextView
+                            android:id="@+id/order2_text"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:textSize="18sp"
+                            android:gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/order_split3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/my_divider"/>
+
+                    <LinearLayout
+                        android:id="@+id/order3"
+                        android:orientation="horizontal"
+                        android:background="@android:color/background_light"
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:id="@+id/order3_image"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp" />
+
+                        <TextView
+                            android:id="@+id/order3_text"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:textSize="18sp"
+                            android:gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/order_split4"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/my_divider"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:padding="10dp"
+                        android:text="订单状态："/>
+
+                    <TextView
+                        android:id="@+id/order_state"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:textSize="18sp"
+                        android:textColor="#0072A8"
+                        android:padding="10dp"
+                        android:text="待发货" />
+
+                    <TextView
+                        android:id="@+id/order_payment"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="18sp"
+                        android:text="赔付"
+                        android:background="@drawable/payment_shape"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="订单信息"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical"
+                        android:background="@android:color/background_light"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingBottom="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:textColor="#000000"
+                                android:gravity="center_vertical"
+                                android:text="订单编号:"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:textColor="#000000"
+                                android:gravity="center_vertical"
+                                android:text="衣服件数:"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:textColor="#000000"
+                                android:gravity="center_vertical"
+                                android:text="创建时间:"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:textColor="#000000"
+                                android:gravity="center_vertical"
+                                android:text="归还时间:"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/order_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:textColor="#000000"
+                                android:gravity="center_vertical"
+                                android:text="订单编号:"/>
+
+                            <TextView
+                                android:id="@+id/order_cnt"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:textColor="#000000"
+                                android:gravity="center_vertical"
+                                android:text="衣服件数:"/>
+
+                            <TextView
+                                android:id="@+id/order_create"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:textColor="#000000"
+                                android:gravity="center_vertical"
+                                android:text="创建时间:"/>
+
+                            <TextView
+                                android:id="@+id/order_back"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:textColor="#000000"
+                                android:gravity="center_vertical"
+                                android:text="归还时间:"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

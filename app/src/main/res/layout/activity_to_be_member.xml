@@ -1,0 +1,180 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_height="56dp"
+            android:layout_width="match_parent"
+            android:id="@+id/toolbar_member"
+            android:gravity="center"
+            android:background="@android:color/background_light"
+            android:minHeight="?attr/actionBarSize">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="选择卡类型" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <com.htc.delicates.MyView.PagerContainer
+            android:id="@+id/pager_container"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/overlap_pager"
+                android:layout_width="280dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center" />
+
+        </com.htc.delicates.MyView.PagerContainer>
+
+        <RelativeLayout
+            android:background="@android:color/background_light"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="原价"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:id="@+id/member_card_price"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="查看详情"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@android:color/background_light"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="优惠券"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:id="@+id/coupon_price"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textColor="#000000"
+                android:text="暂无可用优惠券"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@android:color/background_light"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="支付方式"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:drawableRight="@drawable/right"/>
+
+            <TextView
+                android:id="@+id/pay_ways"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="选择支付方式"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="10sp"
+            android:text="*付费成为会员即代表您已阅读并同意Delicas会员协议\n\n*如有可使用的优惠券则自动进行抵扣"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@android:color/background_light"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:textSize="22sp"
+            android:textColor="#000000"
+            android:paddingLeft="30dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:text="总价:"/>
+
+        <TextView
+            android:id="@+id/pay_amount"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:textSize="22sp"
+            android:textColor="@android:color/holo_red_light"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:text="¥499"/>
+
+        <TextView
+            android:id="@+id/to_pay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:background="@android:color/holo_red_light"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="去支付"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

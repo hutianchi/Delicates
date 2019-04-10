@@ -1,0 +1,263 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_height="56dp"
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar_personal"
+        android:gravity="center"
+        android:background="@android:color/background_light"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="个人信息" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/user_photo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center_vertical"
+            android:text="头像"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:drawableRight="@drawable/right"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_photo_detail"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"
+            android:src="@drawable/touxiang" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/my_divider"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="昵称"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:drawableRight="@drawable/right"/>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:padding="5dp"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:minLines="1"
+            android:gravity="center_vertical"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/my_divider"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="我的生日"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:drawableRight="@drawable/right"/>
+
+        <EditText
+            android:id="@+id/user_birthday"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:padding="10dp"
+            android:maxLength="10"
+            android:hint="eg:1900-01-01"
+            android:digits="1234567890-"
+            android:gravity="end|center_vertical"
+            android:maxLines="1"
+            android:minLines="1"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/my_divider"/>
+
+    <RelativeLayout
+        android:id="@+id/user_address"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="我的地址"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:drawableRight="@drawable/right"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="查看详情"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/my_divider"/>
+
+    <RelativeLayout
+        android:id="@+id/user_size"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="尺码信息"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:drawableRight="@drawable/right"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="查看详情"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/my_divider"/>
+
+    <RelativeLayout
+        android:id="@+id/user_like"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="风格偏好"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:drawableRight="@drawable/right"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="查看详情"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/my_divider"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/info_save"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="保存"
+            android:layout_alignParentBottom="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@android:color/holo_red_light"
+            android:textColor="#ffffff"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

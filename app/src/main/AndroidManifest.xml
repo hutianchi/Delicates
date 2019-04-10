@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.htc.delicates">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.AddBrandActivity"></activity>
+        <service
+            android:name=".Service.NotificationService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <meta-data
+            android:name="Mob-AppKey"
+            android:value="2aaaeef600f42" />
+        <meta-data
+            android:name="Mob-AppSecret"
+            android:value="fd9026befadb6919d0a8936d278bdf8d" />
+
+        <activity android:name=".Activity.OrderDetailActivity" />
+        <activity android:name=".Activity.BrandDetailActivity" />
+        <activity android:name=".Activity.ClothesDetailActivity" />
+        <activity android:name=".Activity.ToBeMemberActivity" />
+        <activity android:name=".Activity.AddressEditActivity" />
+        <activity android:name=".Activity.UserPreferenceActivity" />
+        <activity android:name=".Activity.UserSizeActivity" />
+        <activity android:name=".Activity.UserAddressActivity" />
+        <activity android:name=".Activity.CouponActivity" />
+        <activity android:name=".Activity.MyWalletActivity" />
+        <activity android:name=".Activity.PersonalActivity" />
+        <activity android:name=".Activity.CommonProblemActivity" />
+        <activity android:name=".Activity.FeedbackActivity" />
+        <activity android:name=".Activity.InviteActivity" />
+        <activity android:name=".Activity.SettingsActivity" />
+        <activity android:name=".Activity.AddBrandActivity" />
         <activity android:name=".Activity.LaunchActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,7 +48,7 @@
         </activity>
         <activity android:name=".Activity.MessageActivity" />
         <activity android:name=".Activity.WardrobeActivity" />
-        <activity android:name=".Activity.MainActivity"></activity>
+        <activity android:name=".Activity.MainActivity" />
     </application>
 
 </manifest>

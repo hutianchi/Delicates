@@ -4,7 +4,6 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="15dp"
     android:background="#ffffff"
     android:paddingTop="5dp"
     android:paddingBottom="5dp">
@@ -13,35 +12,50 @@
         android:id="@+id/item_click_area"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp">
 
 
         <ImageView
-            android:layout_alignParentLeft="true"
             android:id="@+id/clothes_im"
             android:layout_width="100dp"
             android:layout_height="100dp" />
 
         <TextView
-            android:layout_toRightOf="@id/order_image"
+            android:layout_toRightOf="@id/clothes_im"
             android:id="@+id/clothes_tv"
             android:layout_marginLeft="20dp"
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:textSize="18sp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
             android:gravity="center_vertical"/>
 
         <TextView
-            android:layout_toRightOf="@id/order_image"
+            android:layout_toRightOf="@id/clothes_im"
             android:layout_below="@id/clothes_tv"
             android:id="@+id/clothes_size_tv"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:background="@android:color/darker_gray"
-            android:textSize="18sp"
+            android:layout_height="30dp"
+            android:padding="3dp"
+            android:background="#f0f0f0"
+            android:textSize="16sp"
             android:gravity="center_vertical"/>
 
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="#FFF55030"
+        android:gravity="center"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:text="删除"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp" />
 
 </LinearLayout>
